@@ -10,8 +10,6 @@ for (var i = 0; i < cells.length; i++){
 }
 
 
-
-
 //variables
 var player = '⭐️'
 var opponent = '❤️'
@@ -23,4 +21,19 @@ function hide(element) {
 }
 function show(element) {
     element.classList.remove('hidden')
+}
+function togglePlayer(){
+    if(player === '⭐️'){
+        player = '❤️'
+        opponent = '⭐️'
+    }else {
+        player = '⭐️'
+        opponent = '❤️'
+    }
+}
+function clickCell(cell) {
+    if (cell.innerText === '') {
+        cell.innerText = player
+        togglePlayer();  
+    }
 }
