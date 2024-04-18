@@ -1,12 +1,12 @@
 //querySelectors
 var cells = document.querySelectorAll('.cell');
+var turn = document.querySelector('.turn')
 
 //eventListeners
 for (var i = 0; i < cells.length; i++){
     cells[i].addEventListener('click', function(event){
         clickCell(event.target);
     })
-    togglePlayer()
 }
 
 
@@ -25,11 +25,11 @@ function show(element) {
 function togglePlayer(){
     if(player === '⭐️'){
         player = '❤️'
-        opponent = '⭐️'
-    }else {
+    } else {
         player = '⭐️'
         opponent = '❤️'
     }
+    turn.innerText= `It's ${player}'s turn`
 }
 function clickCell(cell) {
     if (cell.innerText === '') {
