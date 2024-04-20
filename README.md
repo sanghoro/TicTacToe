@@ -15,5 +15,10 @@ https://github.com/sanghoro/TicTacToe
 ![screenshot](https://github.com/sanghoro/TicTacToe/assets/159068651/687be8b8-976c-406b-991e-e02ab89a4f3c)
 
 
+### Pre-planning:
+![Screenshot 2024-04-19 at 8 44 00 PM](https://github.com/sanghoro/TicTacToe/assets/159068651/90078a88-d9f4-4bc6-b873-1786d466b412)
+
+
 ### Contributors:
-Seong Kang (https://github.com/sanghoro/TicTacToe)
+Seong Kang / E-mail: seong.h.kang2@gmail.com
+(https://github.com/sanghoro/TicTacToe)
