@@ -44,11 +44,10 @@ function checkWin() {
             cells[combi[0]].innerText === cells[combi[1]].innerText &&
             cells[combi[1]].innerText === cells[combi[2]].innerText) {
             playerWon = true;
-            
 
             updateWinCount(cells[combi[0]].innerText);
             turn.innerText = `${cells[combi[0]].innerText} WON!`;
-            
+
             setTimeout(function () {
                 resetCell();
                 togglePlayer();
@@ -64,7 +63,6 @@ function checkTie() {
     for (var i = 0; i < cells.length; i++) {
         if (cells[i].innerText === '') {
             allFilled = false;
-
         }
     }
     if (allFilled && !checkWin()) {
@@ -89,10 +87,10 @@ function clickCell(cell) {
 
 function updateWinCount(winningSymbol) {
     if (winningSymbol === '🐶') {
-        playerWins++; 
+        playerWins++;
         document.getElementById('playerWins').innerText = playerWins;
     } else if (winningSymbol === '🐵') {
-        opponentWins++; 
-        document.getElementById('opponentWins').innerText = opponentWins; 
+        opponentWins++;
+        document.getElementById('opponentWins').innerText = opponentWins;
     }
 }
