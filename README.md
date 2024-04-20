@@ -8,6 +8,7 @@ It is designed to be responsive. It creates cute emojis as they are clicked insi
 
 ### Installation Instructions:
 For this project, you can grab the link to the github and have it cloned down to the local computer. You can access it by opening index.html file.
+https://github.com/sanghoro/TicTacToe
 
 
 ### Preview of App:
@@ -15,4 +16,4 @@ For this project, you can grab the link to the github and have it cloned down to
 
 
 ### Contributors:
-Seong Kang
+Seong Kang (https://github.com/sanghoro/TicTacToe)
