@@ -10,8 +10,8 @@ for (var i = 0; i < cells.length; i++) {
 }
 
 //variables
-var player = '⭐️'
-var opponent = '❤️'
+var player = '🐶'
+var opponent = '🐵'
 var playerWins = 0;
 var opponentWins = 0;
 
@@ -23,11 +23,11 @@ var winningCombi = [
 
 //functions
 function togglePlayer() {
-    if (player === '⭐️') {
-        player = '❤️'
+    if (player === '🐶') {
+        player = '🐵'
     } else {
-        player = '⭐️'
-        opponent = '❤️'
+        player = '🐶'
+        opponent = '🐵'
     }
     turn.innerText = `It's ${player}'s turn`
 }
@@ -44,15 +44,16 @@ function checkWin() {
             cells[combi[0]].innerText === cells[combi[1]].innerText &&
             cells[combi[1]].innerText === cells[combi[2]].innerText) {
             playerWon = true;
+            
 
             updateWinCount(cells[combi[0]].innerText);
-            turn.innerText = `${cells[combi[0]].innerText} won!`;
+            turn.innerText = `${cells[combi[0]].innerText} WON!`;
             
             setTimeout(function () {
                 resetCell();
                 togglePlayer();
                 turn.innerText = `It's ${player}'s turn`
-            }, 5000);
+            }, 1500);
         }
     }
     return playerWon;
@@ -67,11 +68,11 @@ function checkTie() {
         }
     }
     if (allFilled && !checkWin()) {
-        turn.innerText = "It's a draw!";
+        turn.innerText = "IT'S A DRAW!";
         setTimeout(function () {
             resetCell();
             togglePlayer()
-        }, 5000);
+        }, 1500);
         return true;
     }
 }
@@ -87,10 +88,10 @@ function clickCell(cell) {
 }
 
 function updateWinCount(winningSymbol) {
-    if (winningSymbol === '⭐️') {
+    if (winningSymbol === '🐶') {
         playerWins++; 
         document.getElementById('playerWins').innerText = playerWins;
-    } else if (winningSymbol === '❤️') {
+    } else if (winningSymbol === '🐵') {
         opponentWins++; 
         document.getElementById('opponentWins').innerText = opponentWins; 
     }
