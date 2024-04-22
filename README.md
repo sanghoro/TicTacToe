@@ -16,6 +16,7 @@ https://github.com/sanghoro/TicTacToe
 
 
 ### Pre-planning:
+Link to pre-planning: https://github.com/users/sanghoro/projects/2/views/4
 ![Screenshot 2024-04-19 at 8 44 00 PM](https://github.com/sanghoro/TicTacToe/assets/159068651/90078a88-d9f4-4bc6-b873-1786d466b412)
 
 
